@@ -1,0 +1,34 @@
+1. DrawingBox myBoard; - 
+Creates a variable of type DrawingBox.
+Main memory has variable myBoard pointing to null.
+
+myBoard = new DrawingBox(); 
+Constructs the DrawingBox object with myBoard referencing to the DrawingBox Object with
+initialized instance variables.
+Main memory has variable myBoard pointing to object DrawingBox.
+
+myBoard.setVisible(true); 
+Method which makes the variable myBoard visible.
+Main memory has variable myBoard pointing to object DrawingBox, something happens to 
+instance variable in DrawingBox as a result of setVisible(true). 
+
+myBoard.drawRect(320,230,120,180);
+Draws outline of specified rectangle.
+Left and right edges of rectangle are at 320 and 440, respectively.
+Top and bottom edges of rectangle are at 230 and 400, respectively. 
+Main memory has variable myBoard pointing to object DrawingBox, something happens to 
+instance variable in DrawingBox as a result of drawRect(320,230,120,180). 
+
+2. The constructor is invoked in the line myBoard = DrawingBox(), we know it is legal to
+use it without any arguments because there in the documentation there is a constructor 
+that takes no parameters otherwise known as a default constructor. It can also accept
+an argument, it would be type string and it would have constructed a DrawingBox with a 
+special title rather than the default title. 
+
+3. drawRect is a method of DrawingBox. The version of drawRect we are using is the
+method that takes 4 arguments (int x, int y, int width, int height), there is another 
+method which only takes one argument (Rectangle r). We know that the version with 4 
+arguments is being used because when we call drawRect we use 4 arguments. The first 
+argument x is the coordinate of the left edge of the rectangle,  y is the 
+coordinate of the top edge of the rectangle, width represents the width of the rectangle
+and height represents the height of the rectangle.

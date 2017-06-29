@@ -1,0 +1,43 @@
+Answers 
+1. The shuffle method I wrote for project two was not as efficient as the one I wrote for the lab. The one I 
+wrote for project two is linear and it carries out the actual shuffling of the deck. The shuffle method I wrote
+for the lab only sets shuffled = true making it a constant in terms of big O notation, which then causes the 
+deal method to actual carry out the shuffling.
+
+Project 2 Shuffle Method:
+	public void shuffle() {
+		Random rand = new Random(); 
+		int max = 51;
+		for(int count = 0; count < 52; count++) {
+			int randomNum = rand.nextInt((max-count) + 1) + count;
+			Card randomCard;
+			randomCard = deckOfCards[randomNum];
+			deckOfCards[randomNum] = deckOfCards[count];
+			deckOfCards[count] = randomCard;
+		}		
+	}	
+	
+2. The deal method in both project two and the lab are constants since they aren't going through any loops, so
+in order to look at which is more efficient we have to look at the worst case scenario for both. In the deal 
+method of project two, it always carries out 3 operations. In the deal method of the lab there are 3 conditions
+which check if the deck is empty, the deck is shuffled or the deck is in order. If the deck is empty or in 
+order the deal method only carries out 2 operations. However, if the deck is "shuffled" it carries out 4 
+operations. So the deal method for the lab is more efficient only if the deck is empty or in order, but if the
+deck is "shuffled" it actually has to do the shuffling and it isn't as efficient as the deal method in my 
+project.
+
+Project 2 Deal Method:
+	public Card deal() {
+		Card cardDeal = deckOfCards[cardsDealt];
+		cardsDealt ++;
+		return cardDeal;
+	}
+	
+3. 
+a. Yes, the second printing should show the same contents as the first, this is the same as taking a deck of 
+cards in real life and shuffling it once and then looking at it in order, putting it back in the same order 
+and looking at it again. However, this does not happen because the shuffling makes it random each time.
+
+b. toString would have to store the collection of strings which it retrieved from the first time the deck was 
+shuffled and it would have keep this string and remain unchanged until a new deck is created or until the deck 
+is shuffled again.

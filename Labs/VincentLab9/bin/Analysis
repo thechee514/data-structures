@@ -1,0 +1,14 @@
+Analysis 
+Finally, how long does this sort take? That is, what is the worst-case running time of the priorityQueueSort method? 
+The worst-case running time of the priorityQueueSort method is O(n). It goes through a for-loop which calls PQ.remove() which is a method 
+in our priority queue class that removes the root node, PQ.remove() calls a method in heap - PQHeap.deleteRoot(). This method is in our Heap 
+class and its runtime is always O(1) - constant because it goes through the same number of steps regardless of input.
+
+How does your answer compare to the worst-case running time of a similar priorityQueueSort in which the Priority Queue 
+is implemented as an unsorted linked list?
+The worst-case running time of the priorityQueueSort method in which the Priority Queue is implemented as an unsorted linked list will be O(n^2). 
+Like in the previous case, the priorityQueueSort method goes through a method which calls PQ.remove() depending on the input size (size of the array)
+then the PQ.remove() calls a method in the heap class - PQHeap.deleteRoot(). In the previous array implementation we can access the last element of the 
+array with O(1) runtime, whereas if we had an unsorted linked list we would have to go through the entire linked list, probably with another for-loop
+therefore the deleteRoot() method would have runtime O(n) and as a result, the priorityQueueSort method would have a nested for-loop and a worst-case 
+running time of O(n^2).

@@ -1,0 +1,28 @@
+1. For a linked list of n nodes, what are the worst-case running times of your findNodeBefore and insertAfter 
+methods? Answer using Big-O notation.
+The worst-case run times for findNodeBefore and insertAfter are both O(n).
+
+2. Notice that the two methods you wrote are private to enforce information hiding. What information is being 
+hidden here? What does the outside world not need to know about to use your LinkedList class?
+The information regarding the node is being hidden since they don't need to know about the node which is being 
+returned and they also don't need to know how the new event is being added, they just need to input an event.
+They do not need to know what which position to add the date to, it automatically adds and sorts the event 
+based in a chronological order.
+
+3. Suppose you are a busy person and you are adding many new events and reminders to the list throughout the 
+day. However, the only time you access the existing information is at the beginning of the day when you print 
+out the agenda for that day. From an efficiency standpoint, which data structure would be better to use: an 
+array or linked list? Why?
+Using a linked list would be better. This is because a linked list does not have any set capacity, so the 
+program would not have to constantly be updating the capacity, which would happen if you were using an array. 
+Using a linked list allows you to add on information easily and also access information early in the list 
+quickly.
+
+4. Suppose you are not so busy (your agenda has normally only few items), but you like to check your agenda 
+often. In particular, you like to look up your agenda not just for the current day, but for any given day in 
+the future, and you like to check up on the event scheduled furthest into the future. From an efficiency 
+standpoint, which data structure would be better to use: an array or linked list? Why?
+Using an array is more efficient because you can select the index to look up your agenda for that day. It is 
+more efficient because if you use a linked list you have to move from one node to the next and go through the
+entire list to get to the end accessing from the head, but if you use an array you can just select the last 
+element in that array and get that information directly without having to iterate through anything to get there.

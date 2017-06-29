@@ -1,0 +1,33 @@
+Runtime for Stack Methods
+
+	public Stack() {
+		stackContents = new LinkedList<Element>();
+	}
+	Runtime for stack(): O(1).
+	
+	public int size() {
+		return stackContents.size();
+	}
+	Runtime for size(): O(1).
+	
+	public boolean isEmpty() {
+		return stackContents.size() == 0;
+	}
+	Runtime for isEmpty(): O(1).
+	
+	public void push(Element toAdd) {
+		stackContents.insertAtHead(toAdd);
+	}
+	Runtime for push(): O(1).
+	
+	public Element pop() {
+		return stackContents.removeHead();
+	}
+	Runtime for pop(): O(1).
+	
+
+	public Element top() {
+		return stackContents.elementAtHead();
+	}
+	Runtime for top(): O(1).
+	
