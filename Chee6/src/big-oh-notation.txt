@@ -1,0 +1,28 @@
+Big-O runtime Questions
+
+1. What is the big-O runtime (in terms of the size of the address book) of adding an entry to
+your address book?
+In my address book, the big-O runtime is linear, there is a while loop in the insertSorted method which is 
+called in order to add the contacts according to their name, therefore big-O runtime is O(n).
+
+2. What is the big-O runtime of finding an entry in your address book?
+The big-O runtime of finding an entry in my address book is linear, O(n), it calls the find function which I 
+created in the GenericLinkedList class which goes through a while loop in the worst-case scenario.
+
+3. What is the big-O runtime of removing an entry from your address book?
+Similarly, the big-O runtime of removing an entry is linear, O(n), it calls the remove function I created in 
+the GenericLinkedList class which also goes through a while loop in the worst-case scenario.
+
+4. What would be the big-O runtimes for these methods if you implemented your address book using an array 
+instead of a linked list? Explain your answers.
+The runtime of the add method would be linear O(n), this is because you have to iterate through the array 
+to find the correct index to insert the contact in, then you can store this information (index which contact
+needs to be added) and use it later. You then want to move all the contacts after the index you want to add
+the contact down one so that there is a space to add the new contact.
+
+The runtime of the find method would be linear, O(n) as well because you just have to loop through the array 
+and once you find the contact in the index you can print out the representation of the contact in a nice format.
+
+Like the find method, the runtime of the remove method would also be linear, O(n) because you would find the contact 
+in the index you want to remove and you would remove that contact and then afterwards loop through and move all the 
+contacts after that index up one.

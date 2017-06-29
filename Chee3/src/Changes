@@ -1,0 +1,8 @@
+In my Card class, I added a setSuit class and I also made the instance variable suit not final anymore. I also made made some stylistic changes to conform
+to convention.
+In my Deck class, I had to change the length of my deck array, but I realized I had to do this in several places, 
+so I create a new instance variable deckLength, which refers to the number of cards which will be in the deck, in 
+this case there will be two decks of cards and therefore I’ve set deckLength = 104, adding this instance variable 
+allows me to easily change the size of the deck easily. I also had to nest the two previous for loops in a new for 
+loop in order to create another deck. In my Deck class, I also added a deckLength method, which gets me the length of the deck.
+I also made made some stylistic changes to conform to convention. I also set all instance variables to private.
