@@ -1,8 +1,8 @@
 # Data Structures Projects and Labs
-A collection of CSC150 projects and labs completed in Winter 2015.
+A collection of CSC150 (Data Structures) projects and labs completed in Winter 2015 at Union College.
 
 ## Project 1 - Looking out for Number One
-**Assignement**
+**Assignment**
 
 Create a program that takes a file of statistics as input, computes how many of the numbers have
 x as a leading digit for all x 1-9, and then plots a bar graph showing the relative frequency of
@@ -32,7 +32,7 @@ frequency of the lead digit
 9: *****************
 
 ## Project 2 - Unfair Solitaire?
-**Assignement**
+**Assignment**
 
 Create a program that simulates playing solitaire. Remember, you're not
 building a game to be played by a user. You're simply building a program that will play the game
@@ -62,7 +62,7 @@ something like this (with the questions marks replaced by real numbers):
 ?/10000 games won = ?%
 
 ## Project 3 - Figure Eight
-**Assignement**
+**Assignment**
 
 Create a program that allows 2 or more humans to play Crazy Eights via keyboard input and
 System.out for output. 
@@ -71,29 +71,44 @@ The game should announce when any player has exactly one card remaining (as a wa
 other players). The game will end when the computer announces a winner.
 
 ## Project 4 - Get in Line, Part I
-**Assignement**
+**Assignment**
 
 Your assignment is to create the public **Sequence** class that will allow you to construct and use
 sequence containers. Your **Sequence** class will be limited to storing Strings (your book discusses
 how to implement a sequence that can store doubles). I want you to implement your **Sequence**
 class using arrays. That is, each instance of a Sequence object should have its own array for
-storing the data contained in the sequence. Chapter 3 of your book provides a nice discussion of
-the design of a sequence ADT. In particular, it gives a suggested **invariant** for the ADT that
-should help you get started. You should feel free to implement according to the book's suggested
-invariant, or make your own. In any case, **include the invariant of your ADT in a comment**
-near the top of your class in Sequence.java.
+storing the data contained in the sequence. 
 
-To help get you started, you can download the skeleton of the Sequence class from Nexus. **Your
-implementation must have *exactly* these methods with *exactly* these method signatures.**
-**You are not allowed to change the signatures of the Sequence methods in any way. In
-addition, your toString method should return a string that uses sexactly the format
-specified in the comments.** You are also not allowed to use any of Java's built-in containers for
-this project, like **ArrayList** or **Vector**. You are, however, encouraged to build private helper
-methods if you wish. It is your job to figure out what instance variables are appropriate. 
+
 
 ## Project 5 - Get in Line, Part II
-**Assignement**
+**Assignment**
 
 Redo Project 4 in its entirety, but this time, use a linked list to hold the data members of a
 sequence instead of an array. You must keep the exact same public interface that was given in
 Project 4. See Project 4 for the interface and testing code. 
+
+## Project 6 - Addressbook
+**Assignment**
+
+In this project, you are going to implement the address book using a linked list. In addition, you
+are going to analyze the most important methods in terms of their runtime, and you are going to
+compare their runtime performance to the runtimes you could have achieved with an array-based
+implementation.
+
+## Project 7 - Analyzing Time Complexity 
+**Assignment**
+
+Your task is to deduce the worst-case time complexity of each of the six methods and express it
+in Big-O notation.
+
+## Project 8 - We the People (Working with Trees)
+**Assignment**
+
+At the end of most textbooks is an index that tells you on what pages you can find certain
+keywords. Most modern word processors can automatically create an index for you by scanning
+the text, picking out significant words, and keeping track of the pages on which those words
+occur. 
+
+Your assignment is to write a program that will automatically create such an index for any given
+text file. 
