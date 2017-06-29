@@ -1,4 +1,4 @@
-# Data Structures Projects and Labs
+# CSC150 - Data Structures Projects and Labs
 A collection of CSC150 (Data Structures) projects and labs completed in Winter 2015 at Union College.
 
 ## Project 1 - Looking out for Number One
